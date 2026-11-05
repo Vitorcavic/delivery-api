@@ -2,7 +2,7 @@ import { env } from "@/env"
 
 export const authConfig = {
     jwt: {
-        secret: env.SECRET_JWT,
+        secret: env.JWT_SECRET,
         expiresIn: "1d" as const,
     }
 }
