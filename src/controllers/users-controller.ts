@@ -32,7 +32,7 @@ class UsersController {
 
         const { password: _, ...userWithoutPassword } = user
 
-        return res.status(201).json({ userWithoutPassword })
+        return res.status(201).json(userWithoutPassword)
     }
 }
 
