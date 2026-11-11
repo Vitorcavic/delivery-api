@@ -23,4 +23,15 @@ describe("UsersController", () => {
 
         user_id = response.body.id
     })
+
+    it("shoul throw a new erro if the email is already used", async() => {
+        const response = await request(app).post("/users").send({
+            name: "Dup User",
+            email: "testuser@example.com",
+            password: "password123",
+        })
+
+        expect(response.status).toBe(400)
+        expect(response.body.message).toBe("Ja existe um usuário cadastrado com este email.")
+    })
 })
