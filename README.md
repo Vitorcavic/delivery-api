@@ -95,7 +95,8 @@ Create a `.env` file in the project root:
 
 ```env
 DATABASE_URL="postgresql://postgres:postgres@localhost:5432/delivery-api?schema=public"
-JWT_SECRET="your_super_secret_key"
+JWT_SECRET=your_super_secret_key
+PORT=3333 (You can change the port here, 3333 is already the default port)
 ```
 
 ### 4) Run Prisma migrations
