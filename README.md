@@ -94,7 +94,7 @@ docker compose up -d
 Create a `.env` file in the project root:
 
 ```env
-DATABASE_URL="postgresql://postgres:postgres@localhost:5432/delivery-api?schema=public"
+DATABASE_URL="your_db_url"
 JWT_SECRET=your_super_secret_key
 PORT=3333 (You can change the port here, 3333 is already the default port)
 ```
